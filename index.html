@@ -25,9 +25,9 @@
         <div class="movie" v-for="movie in movies">
             <ul>
                 <li class="title"> {{ movie.title }}</li>
-                <li class="original"> {{ original }}</li>
-                <li class="language"> {{ language }} </li>
-                <li class="vote_average"> {{ vote_average }} </li>
+                <li class="original_title"> {{ movie.original_title }}</li>
+                <li class="language"> {{ movie.original_language }} </li>
+                <li class="vote_average"> {{ movie.vote_average }} </li>
             </ul>
         </div>
     </div>

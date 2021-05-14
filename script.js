@@ -26,13 +26,27 @@ const app = new Vue({
             });
             console.log(this.filteredMovies);
         },        
+        makeAxiosSearch(searchType) {
+            const axiosOptions = {
+                params: {
+                    api_key: this.tmdbApiKey,
+                    query: this.textToSearch,
+                    language: ""
+                }
+            };
+        }
     },
     mounted() {
-            axios.get("https://api.themoviedb.org/3/search/movie?api_key=8a829ff209d6832cb229ed5da95d267b&query=back to the future&language=it-IT")
-                .then((resp) => {
+            axios.get("https://api.themoviedb.org/3/search/movie", {
+                params: {
+                    api_key: this.tmdbApiKey,
+                    query:this.textToSearch,
+                    language: ""
+                }                
+            }.then((resp) => {
                     console.log(resp)
                     this.movies = resp.data.results;
                     console.log(this.movies)
                 })
-        }
+            )}
 })
