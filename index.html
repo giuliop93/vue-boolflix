@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"></script>
     <title>Document</title>
 </head>
 
@@ -22,15 +22,15 @@
         </header>
 
         <h1></h1>
-            <ul>
-                <li class="movie" v-for="movie in movies">
-                    <p class="title"> {{ movie.title }} </p>
-                    <p class="original_title"> {{ movie.original_title }} </p>
-                    <p class="language"> {{ movie.language }} </p>
-                    <p class="vote_average"> {{ movie.vote_average }} </p>
-                <li>                
-            </ul>
-        </div>
+        <ul>
+            <li class="movie" v-for="movie in movies">
+                <p class="title"> {{ movie.title }} </p>
+                <p class="original_title"> {{ movie.original_title }} </p>
+                <p class="language"> {{ movie.language }} </p>
+                <p class="vote_average"> {{ movie.vote_average }} </p>
+            <li>
+        </ul>
+    </div>
     </div>
     </div>
     </div>
