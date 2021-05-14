@@ -19,7 +19,7 @@ const app = new Vue({
                 if (movieTitle.includes(searchedName)) {
                     this.filteredMovies.push(movie)
                 }
-                //     // contact.visible = true;
+                //     // contact.visible = true;l
                 // } else {
                 //     contact.visible = false;
                 // }            
