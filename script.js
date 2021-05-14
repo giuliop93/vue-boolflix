@@ -41,12 +41,12 @@ const app = new Vue({
                 params: {
                     api_key: this.tmdbApiKey,
                     query:this.textToSearch,
-                    language: ""
+                    language: "it_IT"
                 }                
-            }.then((resp) => {
+            })            .then((resp) => {
                     console.log(resp)
                     this.movies = resp.data.results;
                     console.log(this.movies)
                 })
-            )}
-})
+            
+}})
